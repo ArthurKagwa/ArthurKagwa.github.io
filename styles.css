@@ -77,13 +77,13 @@ a img{
 }
 .bottom .left{
     margin-left: 10px;
-    width: 29%;
+    width: 20%;
     
 
 }
  .right{
     /* display: inline-flex; */
-    width: 70%;
+    width: 80%;
 
 }
 hr{
@@ -282,7 +282,7 @@ hr{
             font-size: smaller;
         }
         p{
-            font-size: .7rem;
+            font-size: 1rem;
         }
         a img{
             height: 1.5rem;
