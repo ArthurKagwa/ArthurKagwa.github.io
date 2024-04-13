@@ -18,7 +18,7 @@
             </div>
             <div class="book">
                 <p>
-                    <a class="forrm" style="padding:10px" href="rooms.html#form">BOOK NOW</a>
+                    <a class="forrm" style="padding:1%" href="rooms.html#form">BOOK NOW</a>
                 </p>
             </div>
             
@@ -59,7 +59,7 @@
             GUEST ROOMS
         </h1>
     </div>
-    <div class="message" style="height: 400px;">
+    <div class="message" >
         <h2>
             OUR ROOMS
         </h2>
@@ -131,16 +131,15 @@
            
             
         </div>
-    <div class="slider" style="text-align: center;">
-        <br>
-        <br>
+
     <div class="virtual-tour">
+        <br><br>
         <h2>VIRTUAL TOUR</h2>
         <br><br>
         <div class="vid" style="width: 70%;">
-            <video src="images/vid1.mp4" style="height:500px" controls></video>
-            <video src="images/vid2.mp4" style="height:500px" controls autoplay muted loop></video>
-            <video src="images/vid3.mp4" style="height:500px" controls ></video>
+            <video src="images/vid1.mp4"  controls></video>
+            <video src="images/vid2.mp4"  controls autoplay muted loop></video>
+            <video src="images/vid3.mp4"  controls ></video>
         </div>
     </div>
     <div class="form" id="form" style="margin-top:40px;">
@@ -167,23 +166,29 @@
             <hr>
             <br>
     
-            <fieldset class="line">
-                <div class="lined"  style="width: 10%;">
-                    <label for="adult">Adults</label>
-                    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+            <fieldset class="line--">
+                <div class="div" style="width: 30%;">
+                    <div class="lined"  style="width: 10%;">
+                        <label for="adult">Adults</label>
+                        <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                    </div>
+                    <div class="lined" style="width: 10%;">
+                        <label for="child">Children</label>
+                        <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                    </div>
                 </div>
-                <div class="lined" style="width: 10%;">
-                    <label for="child">Children</label>
-                    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                <div class="div" style="width: 60%;">
+                    <div class="lined">
+                        <label for="checkin-date">Check-in Date</label>
+                        <input type="date" id="checkin-date" name="checkin" required>
+                    </div>
+                    <div class="lined">
+                        <label for="checkout-date">Check-out Date</label>
+                        <input type="date" id="checkout-date" name="checkout" required>
+                    </div>
                 </div>
-                <div class="lined">
-                    <label for="checkin-date">Check-in Date</label>
-                    <input type="date" id="checkin-date" name="checkin" required>
-                </div>
-                <div class="lined">
-                    <label for="checkout-date">Check-out Date</label>
-                    <input type="date" id="checkout-date" name="checkout" required>
-                </div>
+               
+                
             </fieldset>
             
             <div class="set">
@@ -225,6 +230,7 @@
     <hr style="margin-bottom:60px;width: 90%; border-color:rgb(35, 35, 90);height:2px;background-color:#00808099">
 
     <br>
+    <div class="slider" style="text-align: center;">
         <div class="slides">
             <a class="prev" onclick="prevSlide()" ><strong><</strong></a>
             <a class="next" onclick="nextSlide()"><strong>></strong></a>
@@ -232,11 +238,88 @@
             <div class="slide"><img src="images/img2.webp" alt=""></div>
             <div class="slide"><img src="images/img3.webp" alt=""></div>
             <div class="slide"><img src="images/img4.webp" alt=""></div>
+            <br><br>   
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+        <div class="in-footer">
+            <h2>Quick links</h2>
+            <div class="links">
+                <p><a href="suites.html">suites</a></p>
+            
+                <p><a href="penthouse.html">Penthouses</a></p>
+                
+                <p><a href="rooms.html">Guest rooms</a></p>
+            </div>
+            <h2>BY GROUP D</h2>
+            <ol>
+                <li>Nyero Melvin</li>
+                <li>Martina Ainembabazi</li>
+                <li>Gloria Rugambwa</li>
+                <li>Maria Leodesca</li>
+                <li>Asasira Arthur</li>
+            </ol>
+        </div>
+        <div class="in-footer">
+           <h2 id="contacts">Contacts</h2>
+            <p>Address: Dubai UAE</p>
+            <p>Phone: +00 0000 000 000</p>
+            <p>Email: khjaskhk@jsbuhi.com</p>
+            <br><br>  
+            <p style="padding-top: 20px;">@AtlanisRoyale</p><div class="footer-img">
+               
+                <div class="img-logo"><img src="images/x.png" alt=""></div>
+                <div class="img-logo"><img src="images/ig.png" alt=""></div>
+                <div class="img-logo"><img src="images/youtube.png" alt=""></div>
+                <div class="img-logo"><img src="images/facce.png" alt=""></div>
+            </div>
+                    ATLANTIS ROYALE
+                </a></h1>
+            </div>
+            <div class="book">
+                <p>
+                    <a class="forrm" style="padding:10px" href="rooms.html#form">BOOK NOW</a>
+                </p>
+            </div>
+            
+        </div>
+        <hr style="border:1px solid #494169;">
+
+        <div class="bottom">
+            <div class="left">
+                <a class="location" href="index.html#map">
+                    <img src="images/location.png" alt="">
+                </a>
+                <a  class="phone" href="#contacts">
+                    <img src="images/phone.png" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <div class="in-bottom">
+                    <a href="accomodation.html">
+                        <h2>ACCOMODATION</h2>
+                    </a>
+                </div>
+                <div class="in-bottom">
+                    <a href="restaurant.html">
+                        <h2>RESTAURANT</h2>
+                    </a>
+                </div>
+                <div class="in-bottom">
+                    <a href="rec.html">
+                        <h2>RECREATION</h2>
+                    </a>
+                </div>
+            </div>
             
         </div>
     </div>
-    
-    
+           
+        </div>
+        
+    </div>
 </body>
 
 </html>

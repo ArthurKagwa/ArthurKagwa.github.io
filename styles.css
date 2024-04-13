@@ -17,10 +17,11 @@ p{
 }
 .names{
     text-align: center;
-    width: 90%;
+    width: 80%;
+    padding-left: 25%;
 }
 .book{
-    width: 10%;
+    width: 20%;
 
 }
 .name,h1,h2{
@@ -56,10 +57,10 @@ div{
     color: rgb(202, 199, 194);
 }
 .top{
-    padding: 5px;
+    padding: .5rem;
     text-align: center;
     display: flex;
-    padding-top: 10px;
+    padding-top: 1rem;
 }
 a img{
     height: 3rem;
@@ -67,11 +68,11 @@ a img{
     object-fit: contain;
     border-radius: 10px;
 }
-.header>.bottom{
+.bottom{
     
     display: inline-flex;
     width: 100%;
-    height:60px;
+    height:2rem;
     text-align:left;
 }
 .bottom .left{
@@ -147,6 +148,7 @@ hr{
     padding: 0px 15vw;
     text-align: center;
     margin: 5vw;
+    height: fit-content;
    
 }
 .message p{
@@ -224,14 +226,14 @@ hr{
     margin-top: 3%;
     height: 60vh;
     /* background-color: #008080; */
-    padding: 2%;
+    /* padding: 2%; */
     display: flex;
     align-items: flex-start;
     box-shadow: 0px 0px .5vw .5vw  rgba(0,0,0,0.4);
 }
 .room .left{
     width: 49%;
-    height: 99%;
+    height: 100%;
     /* padding: 2%; */
     border-right: solid .5vw #008080;
     background-size: 100%;
@@ -263,6 +265,10 @@ hr{
             
             
         }
+        div.right p{
+            font-size: .5rem;
+        }
+        
         .slider{
             width:100%;
             height:fit-content ;
@@ -306,10 +312,79 @@ hr{
         }
         .forrm{
             padding: .1rem;
+            margin: 0;
         }
-        
+        .prev,.next{
+            font-size: 1rem;
+        }
+        div.names{
+            padding-left: 40%;
+        }
+        div.beach{
+            height: 35vh;
+        }
+        div.beach h2{
+            font-size: 2rem;
+        }
+        div.text{
+           
+            margin-top: 20px;
+        }
+        div.text h2{
+            font-size: small;
+
+        }
+
+        h1.in-left{
+            margin-top: 5rem;
+        }
+        button.explore{
+            font-size: .8rem;
+            height: 3vh;
+            padding: 3%;
+        }
+        div.cover{
+            height:30vh;
+        }
+        div.header{
+            height: 10vh;
+        }
+        div.top{
+            height: 5vh;
+            padding-bottom: 0px;
+            
+        }
+        div.book p{
+            font-size: .5rem;
+        }
+        div.bottom{
+            height: 40px;
+            margin-bottom: 0;
+        }
+        div.footer p{
+            text-indent: .5rem;
+            font-size: small;
+          }
+          div.footer-img{
+            width: 100%;
+          }
+          div.footer-img .img-logo{
+            width: 1.5rem;
+            height: 2rem;
+
+          }
+          fieldset.line--{
+            display: block;
+          }
+          div#form.form{
+            padding: 0;
+            border: 0;
+          }
+
+
     
 }
+
 .in-left{
     width: 70%;
     margin: auto;
@@ -328,7 +403,7 @@ hr{
 }
 .room .right{
     width: 50%;
-    padding: 5% ;
+    padding: 2% ;
     display: inline-block;
     text-align: center;
     height: 100%;
@@ -339,13 +414,13 @@ hr{
 .strip{
     width: 80%;
     display: flex;
-    height: 100px;
+    height: 20vh;
     text-align: center;
     margin: auto;
 }
 .instrip{
-    height: 100px;
-    width:100px;
+    height: 10vh;
+    width:10vh;
     margin: auto;
 }
 .instrip img{
@@ -356,23 +431,30 @@ hr{
 /* form */
 
 .booking-form {
-    width: 500px;
+    width: 70%;
     margin: 0 auto;
-    padding: 50px;
+    padding: 2rem;
     /* background: #fff; */
   }
+  .div{
+    display: flex;
+    margin: auto;
+  }
+  .div .lined{
+    margin: auto;
+  }
   .form {
-    padding: 50px;
+    padding: 2.5rem;
     /* max-height: 500px; */
     /* overflow-y: auto; */
     width: 75%;
     margin: auto;
     border: solid #007bff 3px;
-    border-radius: 10px;
+    border-radius: 5%;
   }
   
   .set {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
   }
   
   label {
@@ -384,24 +466,25 @@ hr{
   select,
   textarea {
     width: 100%;
-    padding: 10px;
+    padding: .6rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 5%;
   }
   
   button {
     background-color: #007bff;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 1% 2%;
+    border-radius: 10%;
     cursor: pointer;
   }
-  .line{
+  [class^="line"]{
     display: flex;
     padding: 0;
     border: 0;
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
+    width: 100%;
     
   }
   .lined{
@@ -413,15 +496,19 @@ hr{
     width: 45%;
     margin: auto;
   }
+  .virtual-tower{
+    height: fit-content;
+  }
   .vid{
     display: flex;
     margin: auto;
   }
   .vid video{
+    width: 30%;
     margin: auto;
   }
   .forrm{
-    padding: 20px;
+    padding: .5rem;
     background-color: #00808099;
     color: black;
 
@@ -437,8 +524,6 @@ hr{
   }
   /* footer */
   .footer{
-   
-    height: 350px;
     display: flex;
     text-align: center;
     background-color: #140952;
@@ -450,7 +535,7 @@ hr{
   .in-footer{
     width: 48%;
     height: inherit;
-    padding: 40px;
+    padding: 1rem;
     /* background-color:#00808047; */
     margin: auto;
     text-align: left;
@@ -458,7 +543,7 @@ hr{
     
   }
   .footer p{
-    text-indent: 40px;
+    text-indent: 1rem;
     font-size: larger;
   }
   .footer a{
@@ -471,11 +556,11 @@ hr{
     width: 65%;
   }
   .img-logo{
-    height: 50px;
-    width: 50px;
+    height: 3rem;
+    width: 3rem;
     margin: auto;
     background-color: rgba(250, 235, 215, 0.228);
-    padding: 2px;
+    padding: .1rem;
     border-radius: 10%;
 
   }
@@ -498,7 +583,7 @@ hr{
 
  a:hover::after {
     width: 100%;
-    text-indent: 50px;
+    text-indent: 1rem;
 }
 .header a::after,.footer a::after{
     background-color: antiquewhite;
@@ -509,19 +594,19 @@ button{
 /* recreation */
 .beach{
     width: 100%;
-    height: fit-content;
+    height: 80vh;
     background-image: url(images/beach.webp);
     background-position: center;
     /* position: absolute; */
     background-size: 100%;
+    padding: 1rem;
 }
 .beach .text{
-    top: 50%;
    
-    padding: 50px;
+    padding: 1rem;
     width: 30%;
-    height: 200px;
-    position: relative;
+    height: fit-content;
+    /* position: relative; */
     
     font-size: larger;
     color: antiquewhite;
@@ -529,7 +614,7 @@ button{
 /* restaurant */
 .food{
     display: flex;
-    padding: 0px 20px;
+    padding: 0px 1rem;
     margin: 0px auto;
     
 }
