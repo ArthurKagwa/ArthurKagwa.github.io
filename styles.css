@@ -350,7 +350,7 @@ button{
     /* position: absolute; */
     background-size: 100%;
 }
-.beach .text{
+.beach .text{ 
     top: 50%;
     left: 1000px;
     padding: 50px;
