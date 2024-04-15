@@ -1,3 +1,5 @@
+/* we used relative units like rem and % to ensure that the site is responsive unlike px */
+
 body{
     margin: 0;
     padding: 0;
@@ -24,6 +26,7 @@ p{
     width: 20%;
 
 }
+/* so that the selected ellements can have a different font */
 .name,h1,h2{
     font-family:'Times New Roman' ;
 }
@@ -32,9 +35,9 @@ h1,h2,p{
     margin: 0%;
 }
 p{
-    font-size: 18px;
+    font-size: 1.5rem;
 }
-
+/* border-box ensures that the size given to a div does not change when padding is increaesed */
 div{
    
     box-sizing: border-box;
@@ -91,6 +94,7 @@ hr{
     padding: 0;
     margin: auto;
 }
+/* //selects all divs starting with hover */
 [class^="hover"] {
     width: 600px;
     height: 250px;
@@ -109,8 +113,9 @@ hr{
     padding-bottom: 0;
     margin-top: .5rem;
     
-    
 }
+/* did not get to impleent this  */
+/* 
 .in-bottom-rec:hover ~.hover-recreation{
     display: block;
     background-image: url(images/);
@@ -121,7 +126,7 @@ hr{
 }
 .in-bottom-acc:hover~.hover-accommodation{
     display: block;
-}
+} */
 /* body */
 .cover{
     background-image: url('images/cover.webp');
@@ -195,6 +200,7 @@ hr{
     height:100%;
     object-fit: cover;
 }
+/* dispalay absolute so the buttons appear on top of the div */
 .prev ,.next{
     padding: 2%;
     position: absolute;
@@ -241,150 +247,7 @@ hr{
     background-position: center;
     display: inline-block;
 }
-    @media screen and (max-width: 500px) {
-        .room .left{
-            width: 70%;
-            height: 100%;
-        }
-        .room{
-            height:30vh;
-            
-        }
-        h2{
-            font-size: .7rem;
-        }
-        h1{
-            font-size: small;
-        }
-        [class^='in-bottom']{
-            display: inline-block;
-            /* padding: 0 ; */
-            width: auto;
-            padding: .1rem;
-            padding-bottom: 0;
-            margin-top: .1rem;
-            
-            
-        }
-        div.right p{
-            font-size: .5rem;
-        }
-        
-        .slider{
-            width:100%;
-            height:fit-content ;
-            /* overflow: hidden; */
-            margin-top: 5%;
-            margin-bottom: 5%;
-            /* position:static; */
-        
-        }
-        br{
-            font-size: smaller;
-        }
-        p{
-            font-size: 1rem;
-        }
-        a img{
-            height: 1.5rem;
-            width: 1.5rem;
-            object-fit: contain;
-            border-radius: 10px;
-        }
-        .header p{
-            font-size:small;
-        }
-        body{
-            /* overflow: hidden; */
-        }
-        .in-left{
-            padding: 2%;
-            background-color: #00808099;
-            border-left: solid rgb(210,96,148) 3px;
-            margin-top: 50%;
-        
-        }
-        .map{
-            width: 100%;
-            height: 50%;
-            padding: 0%;
-
-            margin-bottom: 0;
-        }
-        .forrm{
-            padding: .1rem;
-            margin: 0;
-        }
-        .prev,.next{
-            font-size: 1rem;
-        }
-        div.names{
-            padding-left: 40%;
-        }
-        div.beach{
-            height: 35vh;
-        }
-        div.beach h2{
-            font-size: 2rem;
-        }
-        div.text{
-           
-            margin-top: 20px;
-        }
-        div.text h2{
-            font-size: small;
-
-        }
-
-        h1.in-left{
-            margin-top: 5rem;
-        }
-        button.explore{
-            font-size: .8rem;
-            height: 3vh;
-            padding: 3%;
-        }
-        div.cover{
-            height:30vh;
-        }
-        div.header{
-            height: 10vh;
-        }
-        div.top{
-            height: 5vh;
-            padding-bottom: 0px;
-            
-        }
-        div.book p{
-            font-size: .5rem;
-        }
-        div.bottom{
-            height: 40px;
-            margin-bottom: 0;
-        }
-        div.footer p{
-            text-indent: .5rem;
-            font-size: small;
-          }
-          div.footer-img{
-            width: 100%;
-          }
-          div.footer-img .img-logo{
-            width: 1.5rem;
-            height: 2rem;
-
-          }
-          fieldset.line--{
-            display: block;
-          }
-          div#form.form{
-            padding: 0;
-            border: 0;
-          }
-
-
-    
-}
+   
 
 .in-left{
     width: 70%;
@@ -571,6 +434,12 @@ hr{
     object-fit: cover;
     
   }
+
+
+
+
+
+  /* selects the sppace just bellow the link */
  a::after {
     content: '';
     position: absolute;
@@ -579,9 +448,10 @@ hr{
     bottom: 0;
     left: 0;
     background-color: #352499;
+    /* make the line appear slowly. width is innitially 0 */
     transition: width 1s;
 }
-
+/* width then increases to 100% when hovered */
  a:hover::after {
     width: 100%;
     text-indent: 1rem;
@@ -592,7 +462,7 @@ hr{
 button{
     font-size: larger;
 }
-/* recreation */
+/* recreation  page*/
 .beach{
     width: 100%;
     height: 80vh;
@@ -645,4 +515,149 @@ form.contact{
 form.contact fieldset.set{
     border: 0;
     padding: .5rem;
+}
+/* styling for when the display size reduces making the page responsive */
+@media screen and (max-width: 500px) {
+    .room .left{
+        width: 70%;
+        height: 100%;
+    }
+    .room{
+        height:30vh;
+        
+    }
+    h2{
+        font-size: .7rem;
+    }
+    h1{
+        font-size: small;
+    }
+    [class^='in-bottom']{
+        display: inline-block;
+        /* padding: 0 ; */
+        width: auto;
+        padding: .1rem;
+        padding-bottom: 0;
+        margin-top: .1rem;
+        
+        
+    }
+    div.right p{
+        font-size: .5rem;
+    }
+    
+    .slider{
+        width:100%;
+        height:fit-content ;
+        /* overflow: hidden; */
+        margin-top: 5%;
+        margin-bottom: 5%;
+        /* position:static; */
+    
+    }
+    br{
+        font-size: smaller;
+    }
+    p{
+        font-size: 1rem;
+    }
+    a img{
+        height: 1.5rem;
+        width: 1.5rem;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+    .header p{
+        font-size:small;
+    }
+    body{
+        /* overflow: hidden; */
+    }
+    .in-left{
+        padding: 2%;
+        background-color: #00808099;
+        border-left: solid rgb(210,96,148) 3px;
+        margin-top: 50%;
+    
+    }
+    .map{
+        width: 100%;
+        height: 50%;
+        padding: 0%;
+
+        margin-bottom: 0;
+    }
+    .forrm{
+        padding: .1rem;
+        margin: 0;
+    }
+    .prev,.next{
+        font-size: 1rem;
+    }
+    div.names{
+        padding-left: 40%;
+    }
+    div.beach{
+        height: 35vh;
+    }
+    div.beach h2{
+        font-size: 2rem;
+    }
+    div.text{
+       
+        margin-top: 20px;
+    }
+    div.text h2{
+        font-size: small;
+
+    }
+
+    h1.in-left{
+        margin-top: 5rem;
+    }
+    button.explore{
+        font-size: .8rem;
+        height: 3vh;
+        padding: 3%;
+    }
+    div.cover{
+        height:30vh;
+    }
+    div.header{
+        height: 10vh;
+    }
+    div.top{
+        height: 5vh;
+        padding-bottom: 0px;
+        
+    }
+    div.book p{
+        font-size: .5rem;
+    }
+    div.bottom{
+        height: 40px;
+        margin-bottom: 0;
+    }
+    div.footer p{
+        text-indent: .5rem;
+        font-size: small;
+      }
+      div.footer-img{
+        width: 100%;
+      }
+      div.footer-img .img-logo{
+        width: 1.5rem;
+        height: 2rem;
+
+      }
+      fieldset.line--{
+        display: block;
+      }
+      div#form.form{
+        padding: 0;
+        border: 0;
+      }
+
+
+
 }
